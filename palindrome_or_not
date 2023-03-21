@@ -1,0 +1,27 @@
+//palindrome is a number which we get the same the original number after reversing it.
+#include <stdio.h>
+
+int main()
+{
+   int a,rev=0,d,n;
+   //d-last number , reversed number,n= original nunmber
+   printf("enter a number:");
+   scanf("%d",&a);
+   n=a;
+   while (a>0){
+       d=a%10;
+       //condition for getting last number
+       rev=rev*10+d;
+       //condition for reversing the number
+       a=a/10;
+       //condition for the remaining number
+   }
+   if (rev==n)
+       printf("%d is palindrome:",n);
+   else
+       printf("%d is not palindrome:",n);
+   
+   
+
+    return 0;
+}
